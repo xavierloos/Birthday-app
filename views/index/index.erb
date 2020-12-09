@@ -16,10 +16,9 @@
 <body>
   <h1>Hello there!</h1>
   <form action="/birthday" method="post">
-       <div class="col-10 d-flex justify-content-around">
-        <label class="sr-only" for="name">What's your name?</label>
-      </div>
-      <div class="col-8 d-flex justify-content-around">
+    <div class="form-row align-items-center">
+      <div class="col-auto">
+        <label class="sr-only" for="name"> What's your name?</label>
         <div class="input-group mb-2">
           <div class="input-group-prepend">
             <div class="input-group-text">@</div>
@@ -27,13 +26,14 @@
           <input type="text" name="name" id="name" class="form-control mb-2" placeholder="Name" required>
         </div>
       </div>
-    <div class="col-10 d-flex justify-content-around">
+    </div>
+    <div class="col-auto">
       <label class="sr-only" for="date">When's your birthday?</label>
     </div>
-    <div class="col-10 d-flex justify-content-around">
-      <div class="form-group col-4">
-        <label class="d-flex justify-content-around" for="day">Day</label>
-        <select  class="form-control" name="day" required>
+    <div class="col-auto">
+      <div class="form-group col-md-4">
+        <label for="day">Day</label>
+        <select class="form-control" name="day" required>
           <option value="0" selected="1">Choose</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -68,8 +68,8 @@
           <option value="31">31</option>
         </select>
       </div>
-      <div class="form-group col-4">
-        <label class="d-flex justify-content-around" for="day">Month</label>
+      <div class="form-group col-md-4">
+        <label for="day">Month</label>
         <select class="form-control" name="month" required>
           <option value="0" selected="1">Choose</option>
           <option value="Jan">Jan</option>

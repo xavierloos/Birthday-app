@@ -1,5 +1,4 @@
 require "sinatra/base"
-require "./spec/features/index_spec.rb"
 
 class Birthday < Sinatra::Base
   get "/" do

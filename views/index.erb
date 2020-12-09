@@ -7,12 +7,12 @@
 </head>
 <body>
 <h1>Hello there!</h1>
-  <form action="/birthday">
+  <form action="/birthday" method="post">
     <label for="name"> What's your name?</label>
-    <input type="text" name="name" id="name" required>
+    <input type="text" name="name" required>
     <label for="name"> When's your birthday?</label>
      <div class="date">
-    <select aria-label="Day" name="day" id="day">
+    <select aria-label="Day" name="day" required>
       <option value="0" selected="1">Day</option>
       <option value="1">1</option>
       <option value="2">2</option>
@@ -46,7 +46,7 @@
       <option value="30">30</option>
       <option value="31">31</option>
     </select>
-    <select aria-label="Month" name="month" id="month" title="Month" >
+    <select aria-label="Month" name="month" required >
       <option value="0"  selected="1">Month</option>
       <option value="1">Jan</option>
       <option value="2">Feb</option>
@@ -64,6 +64,5 @@
     </div>
     <input class="submit" type="submit" value="submit">
   </form>
-  
 </body>
 </html>
